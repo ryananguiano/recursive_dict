@@ -39,8 +39,7 @@ class TestRecursive_dict(unittest.TestCase):
         assert [item['foo', 'test'] for item in my_dict['many']] \
             == [True, False]
         assert my_dict['deep', 0, 'deeper', 'a'] == 'b'
-        with self.assertRaises(KeyError):
-            my_dict['alpha', 'third']
+        self.assertRaises(KeyError, lambda: my_dict['alpha', 'third'])
 
     def test_safe_rdict(self):
         my_dict = safe_recursive_dict(self.sample_data)
