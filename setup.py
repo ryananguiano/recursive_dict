@@ -30,9 +30,7 @@ setup(
     author="Ryan Anguiano",
     author_email='ryan.anguiano@gmail.com',
     url='https://github.com/ryananguiano/recursive_dict',
-    packages=[
-        'recursive_dict',
-    ],
+    py_modules=['recursive_dict'],
     install_requires=requirements,
     license="ISCL",
     zip_safe=False,
