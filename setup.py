@@ -24,7 +24,7 @@ test_requirements = [
 
 setup(
     name='recursive_dict',
-    version='0.1.0',
+    version='0.2.0',
     description="A dict subclass that can lookup several layers deep.",
     long_description=readme + '\n\n' + history,
     author="Ryan Anguiano",
@@ -33,9 +33,6 @@ setup(
     packages=[
         'recursive_dict',
     ],
-    package_dir={'recursive_dict':
-                 'recursive_dict'},
-    include_package_data=True,
     install_requires=requirements,
     license="ISCL",
     zip_safe=False,
